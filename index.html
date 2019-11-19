@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1, user-scalable=no"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <head>
+    <title>Side Nav</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 class="display-8">STACKOVERFLOW-EDU</h1>
+      <p class="lead">
+        This is a simple web app that can be used to ask questions and also find
+        answers to the questions you are looking for.
+      </p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+    <!-- Side navigation -->
+
+    <div class="sidenav">
+      <a href="Login.html"><button>Login</button></a>
+      <a href="Signup.html"><button>Signup</button></a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">FAQ's</a>
+      <a href="#">Use Cases</a>
+    </div>
+
+    <div class="main">
+      <div id="voting">
+        <div class="upvote"></div>
+        <div class="downvote"></div>
+      </div>
+      <form action="/questions" method="POST">
+        <div class="form-group">
+          <label for="formGroupExampleInput">Ask Question?</label>
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput"
+            placeholder="Question goes here"
+            name="questions"
+          />
+          <button type="submit" id="down">Submit</button>
+          <button id="down">Delete</button>
+        </div>
+        <br /><br />
+        <div class="buttons">
+          <button id="down">Upvote</button>
+          <p id="downvote">
+            <label for="formGroupExampleInput"></label
+            ><input
+              type="text-area"
+              class="form-control"
+              id="formGroupExampleInput"
+              placeholder="Answer goes here"
+            />
+          <button type="submit" id="down">Submit</button>
+          <button id="down">Delete</button>
+
+          </p>
+          <button id="up">Downvote</button>
+          <p id="upvote"></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
